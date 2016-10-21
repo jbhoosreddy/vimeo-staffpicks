@@ -1,0 +1,17 @@
+.player {
+  position: relative;
+  padding-bottom: 0%; /* 16:9 */
+  padding-top: 25px;
+  height: 100%;
+  margin: 0 20% 0 20%;
+  z-index: 10000;
+}
+
+.player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+}

@@ -1,0 +1,59 @@
+.theatre {
+  position: relative;
+  background:
+    linear-gradient(27deg, #151515 19.5px, transparent 19.5px) 0 19.5px,
+    linear-gradient(207deg, #151515 19.5px, transparent 19.5px) 10px 0px,
+    linear-gradient(27deg, #222 19.5px, transparent 19.5px) 0px 10px,
+    linear-gradient(207deg, #222 19.5px, transparent 19.5px) 10px 19.5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  width: 100%;
+  height: 500px;
+}
+
+.video-not-available {
+  margin: 1px 20% 1px 20%;
+  color: #999;
+  font-size: 72px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100%;
+  font-weight: 100;
+  /*text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);*/
+}
+
+.theatre-mode {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  fill: white;
+  z-index: 1000;
+}
+
+.invert {-webkit-filter: invert(80%); filter: invert(80%);}
+
+.theatre-modal {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  position: fixed;
+  z-index: -1;
+  padding-top: 25%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  /*transition-duration: 5s;*/
+}
+.active {
+  opacity: 1;
+  z-index: 100;
+  transition: opacity 0.4s ease-out;
+}

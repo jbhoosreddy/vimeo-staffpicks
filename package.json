@@ -1,0 +1,62 @@
+{
+  "name": "vimeo-staffpicks",
+  "version": "1.0.0",
+  "description": "A simple react based application for show nice videos",
+  "main": "bin/development-server.js",
+  "bin": {
+    "vimeo-staffpicks": "development-server.js"
+  },
+  "scripts": {
+    "start": "node bin/development-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbhoosreddy/vimeo-staffpicks.git"
+  },
+  "keywords": [
+    "vimeo",
+    "staff",
+    "picks"
+  ],
+  "author": "Jaideep Bhoosreddy <jaideepb@buffalo.edu> (http://github.com/jbhoosreddy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbhoosreddy/vimeo-staffpicks/issues"
+  },
+  "homepage": "https://github.com/jbhoosreddy/vimeo-staffpicks#readme",
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.15.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.16.0",
+    "babel-plugin-transform-es2015-parameters": "^6.17.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-flow-strip-types": "^6.14.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-register": "^6.16.3",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.25.0",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "husky": "^0.11.9",
+    "immutable": "^3.8.1",
+    "lodash": "^4.16.4",
+    "mousetrap": "^1.6.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-immutable-proptypes": "^2.1.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "style-loader": "^0.13.1",
+    "svg-inline-loader": "^0.7.1",
+    "svg-inline-react": "^1.0.2",
+    "vimeo": "^1.2.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.0"
+  },
+  "devDependencies": {}
+}

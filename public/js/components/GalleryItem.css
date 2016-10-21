@@ -1,0 +1,108 @@
+.gallery-item {
+  color: #797478;
+  font: 10px/1.5 Verdana, Helvetica, sans-serif;
+  float: left;
+  height: 150px;
+  min-height: 150px;
+  width: 23%;
+  margin: 10px 1% 80px 1%;
+}
+
+.gallery-item--image {
+  position: relative;
+}
+
+.gallery-item--image--active {
+  position: relative;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.gallery-item:hover .item-overlay {
+  top: 0;
+}
+
+.item-overlay--content {
+  display: inline-block;
+  padding: 25px;
+  transform: translate(27%, 25%);
+  fill: white;
+  outline:none;
+  border:0;
+}
+
+.item-overlay--content:focus {
+  outline:0;
+}
+
+.item-overlay {
+  position: absolute;
+  top: 100%; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+
+  -moz-transition: top 0.3s;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.gallery-item a {
+  color: #17272E
+}
+
+.gallery-item a:hover {
+  color: #4bf
+}
+
+.gallery-item h6 {
+  font-weight: normal;
+  font-size: medium;
+  color: #17272E;
+  text-align: left;
+  /*text-transform: uppercase;*/
+}
+
+.gallery-item p {
+  font-weight: normal;
+  font-size: small;
+  color: #17272E;
+  text-align: left;
+  /*text-transform: uppercase;*/
+}
+
+.gallery-item img {
+  max-width: 100%;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+  .gallery-item {width: 21%;}
+}
+
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+  .gallery-item {width: 29.33333%;}
+}
+
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+  .gallery-item {width: 46%;}
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+  .gallery-item {width: 96%;}
+  .gallery-item img {width: 96%;}
+  .gallery-item h3 {font-size: 18px;}
+  .gallery-item p {font-size: 18px;}
+}

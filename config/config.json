@@ -1,0 +1,6 @@
+{
+  "hotReloading": true,
+  "development": {
+    "serverPort": 8080
+  }
+}

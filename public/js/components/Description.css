@@ -1,0 +1,23 @@
+.video-description {
+  width: 80%;
+  margin: 10px 10% 10px 10%;
+}
+
+.video-description--image img {
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+  width: 75px;
+  float: left;
+  vertical-align: middle;
+  margin: 5px;
+  margin-right: 15px;
+}
+
+.video-description--details {
+  margin-left: 10px;
+}
+
+.video-description--text {
+  margin-top: 10px;
+}

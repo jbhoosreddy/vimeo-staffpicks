@@ -1,0 +1,26 @@
+.gallery-arrow--left {
+  position: fixed;
+  top: 650px;
+  left: 3%;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+
+.gallery-arrow--right {
+  position: fixed;
+  top: 650px;
+  right: 3%;
+  cursor: pointer;
+}
+
+.disabled {
+  -webkit-filter: invert(80%); filter: invert(80%);
+  pointer-events: none;
+}
+
+.gallery-arrow, .gallery-arrow > img {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
